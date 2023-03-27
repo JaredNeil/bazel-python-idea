@@ -1,0 +1,11 @@
+load("@pip_special//:defs.bzl", "py_binary")
+
+py_binary(
+  name = "project_special",
+  deps = [
+    "//src/lib_a",
+  ],
+  requirements = [
+    "boto3 == 1.25.5",
+  ],
+)

@@ -1,0 +1,9 @@
+pip_parse(
+  name = "pip",
+  requirements_lock = "requirements.lock"
+)
+
+pip_parse(
+  name = "pip_special",
+  requirements_lock = "special_requirements.lock"
+)

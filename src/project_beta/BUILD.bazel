@@ -1,0 +1,15 @@
+load("@pip//:defs.bzl", "py_binary")
+
+py_binary(
+  name = "project_beta",
+  deps = [
+    "//src/lib_a",
+  ],
+  requirements = [
+    "boto3 >= 1.10.4",
+  ],
+)
+
+# $ bazel build //src/project_beta:project_beta.requirements && cat bazel-bin/src/project_beta.requirements.in
+# boto3 >= 1.10.4
+# requests ~= 2.28.2

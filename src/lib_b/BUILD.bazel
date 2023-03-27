@@ -1,0 +1,6 @@
+py_library(
+  name = "lib_b",
+  requirements = [
+    "requests >= 2.12.0",
+  ],
+)
